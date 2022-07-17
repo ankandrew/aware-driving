@@ -1,1 +1,100 @@
-<h1>Aware Driving</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aware Driving</title>
+    <meta content="Aware Driving" name="description">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com" rel="preconnect">
+    <link crossorigin="anonymous" href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+          integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+          referrerpolicy="no-referrer" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+          rel="stylesheet">
+    <script crossorigin="anonymous"
+            defer="defer"
+            integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://avatars.githubusercontent.com/u/19395782?s=40&v=4" rel="icon" type="image/png">
+    <style>@keyframes animatedBackground {
+               0% {
+                   background-position: 0 0
+               }
+               100% {
+                   background-position: 0, -1000px
+               }
+           }
+
+    body {
+        background-color: #0d1219;
+        background-position: 0 0;
+        background-repeat: repeat;
+        animation: animatedBackground 30s linear infinite;
+        color: #fff;
+        font-family: Verdana, sans-serif;
+        text-align: center;
+        padding-top: 25vh;
+        text-shadow: #000
+    }
+
+    h1 {
+        font-family: Ubuntu, sans-serif;
+        font-size: 4em;
+        margin-bottom: 35px
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 35px
+    }
+
+    p {
+        font-size: 1.6rem
+    }
+
+    hr {
+        width: 50%
+    }
+
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh
+    }
+
+    #avatar {
+        border-radius: 20%;
+        margin-bottom: 20px
+    }
+    </style>
+</head>
+<body>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<div class="container">
+    <div class="row">
+        <div class="twelve column"><img alt="Avatar" height="120px"
+                                        id="avatar" src="https://avatars.githubusercontent.com/u/61120139?v=4"
+                                        width="120px">
+            <h1>Aware Driving</h1>
+            <hr>
+            <div class="row">
+                <div class="two columns">One</div>
+                <div class="two columns">One</div>
+                <div class="two columns">One</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- scripts -->
+<script defer="defer" src="app.js"></script>
+
+</body>
+</html>
