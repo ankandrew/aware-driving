@@ -5,90 +5,123 @@
     <title>Aware Driving</title>
     <meta content="Aware Driving" name="description">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com" rel="preconnect">
-    <link crossorigin="anonymous" href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect">
-    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-          integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
-          referrerpolicy="no-referrer" rel="stylesheet">
-    <link crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
-          rel="stylesheet">
     <script crossorigin="anonymous"
             defer="defer"
             integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
             referrerpolicy="no-referrer"
             src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <link href="assets/Icon-300px.png" rel="icon" type="image/png">
-    <style>@keyframes animatedBackground {
-               0% {
-                   background-position: 0 0
-               }
-               100% {
-                   background-position: 0, -1000px
-               }
-           }
-
-    body {
-        background-color: #0d1219;
-        background-position: 0 0;
-        background-repeat: repeat;
-        animation: animatedBackground 30s linear infinite;
-        color: #fff;
-        font-family: Verdana, sans-serif;
-        text-align: center;
-        padding-top: 25vh;
-        text-shadow: #000
-    }
-
-    h1 {
-        font-family: Ubuntu, sans-serif;
-        font-size: 4em;
-        margin-bottom: 35px
-    }
-
-    h2 {
-        font-size: 2.4rem;
-        margin-bottom: 35px
-    }
-
-    p {
-        font-size: 1.6rem
-    }
-
-    hr {
-        width: 50%
-    }
-
-    #particles-js {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh
-    }
-
-    #avatar {
-        border-radius: 20%;
-        margin-bottom: 20px
-    }
-    </style>
+    <!--  style sheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Open sans Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- slick theme -->
+<!--    <link href="other/slick/slick.css" rel="stylesheet" type="text/css"/>-->
+<!--    <link href="other/slick/slick-theme.css" rel="stylesheet" type="text/css"/>-->
 </head>
 <body>
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
-<div class="container">
-    <div class="row">
-        <div class="twelve column"><img alt="Avatar" height="300"
-                                        id="avatar" src="assets/Icon-300px.png"
-                                        width="300">
-            <h1>Aware Driving</h1>
-            <!-- <hr>-->
+<header>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <div class="wrapper">
+        <div class="hero">
+            <div class="logo">
+                <img src="assets/icon-300px.png" alt="Logo">
+            </div>
+            <div class="text">
+            <h1>Mobile App Name</h1>
+            <h3>A super tagline for the mobile app</h3>
+            <p>Aware Driving (AD) is a mobile app that will assist you while you are driving. Use it with your regular smartphone, there’s no need to buy extra equipment.</p>
+<!--                <span class="test">HOLA ANDI</span>-->
+            <div class="logos">
+                <a href="#" target="_blank" class="playstore"><img src="assets/playstore.png" alt=""></a>
+            </div>
+        </div>
+
         </div>
     </div>
+</header>
+<div class="wrapper">
+<div class="hero-boxes">
+    <div class="box">
+        <div class="box-icon">
+            <img src="" alt="">
+        </div>
+        <h4>User Friendly</h4>
+        <p>Andi estuvo aqui</p>
+    </div>
+    <div class="box">
+        <div class="box-icon"></div>
+        <h4>User Friendly</h4>
+        <p>Andi estuvo aqui</p>
+    </div>
+    <div class="box">
+        <div class="box-icon"></div>
+        <h4>User Friendly</h4>
+        <p>Andi estuvo aqui</p>
+    </div>
+    <div class="box">
+        <div class="box-icon"></div>
+        <h4>User Friendly</h4>
+        <p>Andi estuvo aqui</p>
+    </div>
 </div>
-
+</div>
+<section class="padding_tb">
+    <div class="wrapper">
+        <div class="carousel-section">
+            <h2>Alerts</h2>
+            <div class="slider">
+                <div class="slide">
+                    <div class="slide-img" style="background-image: url('assets/onboarding_sleep_small.jpg')">
+                    </div>
+                    <div class="slide-text"><p>When both of your eyes are completely closed for a given amount of time, you'll be alerted!</p></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-img" style="background-image: url('assets/onboarding_sleep_small.jpg')">
+                    </div>
+                    <div class="slide-text"><p>When both of your eyes are completely closed for a given amount of time, you'll be alerted!</p></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-img" style="background-image: url('assets/onboarding_sleep_small.jpg')">
+                    </div>
+                    <div class="slide-text"><p>When both of your eyes are completely closed for a given amount of time, you'll be alerted!</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="padding_tb">
+    <div class="wrapper">
+        <div class="description">
+                <h2>Description</h2>
+                <p>A more complete description of the mobile app</p>
+                <div>
+                    <p>With a lot of features:</p>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 1</li>
+                        <li>Feature 1</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer_buttons">
+            <a>Github</a>
+            <a>Donate</a>
+            <a>Privacy</a>
+        </div>
+    </div>
+</footer>
 <!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+<script defer="defer" src="backgroundAnimation.js"></script>
 <script defer="defer" src="app.js"></script>
 
 </body>

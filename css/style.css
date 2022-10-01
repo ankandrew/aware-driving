@@ -1,0 +1,218 @@
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0, -1000px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  animation: animatedBackground 30s linear infinite;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  text-shadow: #000;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.7;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+#avatar {
+  border-radius: 20%;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a, button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: inherit;
+  color: inherit;
+  font-weight: 400;
+  font-size: 18px;
+}
+a:hover, button:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: min(1200px, 100% - 2rem);
+  margin: 0 auto;
+}
+
+.padding_tb {
+  padding: 30px 0;
+}
+@media (min-width: 50em) {
+  .padding_tb {
+    padding: 60px 0;
+  }
+}
+
+header {
+  overflow: hidden !important;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(293deg, #ED355B 0%, #1976D2 100%);
+  z-index: 2;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28vh;
+}
+.hero .logo {
+  margin-left: auto;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1/1;
+}
+.hero .logo img {
+  height: 100%;
+}
+.hero .playstore {
+  display: inline-block;
+  transition: transform 0.4s;
+}
+.hero .playstore img {
+  max-width: 180px;
+}
+.hero .playstore:hover {
+  transform: scale(1.05);
+}
+.hero .text {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 700px;
+}
+
+.footer {
+  margin-bottom: 2rem;
+}
+.footer_buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: end;
+}
+
+.carousel-section {
+  color: #333;
+  text-align: center;
+}
+.carousel-section h2 {
+  font-size: 2.8rem;
+  color: #666;
+  text-transform: uppercase;
+  margin: 1rem auto 3.5rem;
+  width: fit-content;
+  box-shadow: 0px 13px 8px -14px rgba(0, 0, 0, 0.75);
+}
+
+.slider {
+  display: flex;
+  gap: 1.5rem;
+}
+.slider .slide {
+  max-width: 450px;
+  aspect-ratio: 1.49/1;
+  transition: transform 0.4s;
+}
+.slider .slide .slide-text {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem 0.2rem;
+}
+.slider .slide .slide-text p {
+  font-size: 16px;
+  text-align: center;
+}
+.slider .slide .slide-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-boxes {
+  color: #666;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: -50px;
+  position: relative;
+  z-index: 3;
+}
+.hero-boxes .box {
+  background-color: white;
+  text-align: center;
+  width: 23%;
+  padding: 0.5rem 0.7rem;
+  border-radius: 7px;
+  box-shadow: 0px 0px 47px -12px rgba(0, 0, 0, 0.75);
+}
+.hero-boxes .box p {
+  font-size: 14px;
+}
+.hero-boxes .box-icon {
+  max-width: 66px;
+}
+
+/*# sourceMappingURL=style.css.map */

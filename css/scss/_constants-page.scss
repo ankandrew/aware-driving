@@ -1,0 +1,13 @@
+// Layout
+$padding-layout: 1rem;
+@media (min-width: 700px) {
+    $padding-layout: 2.5rem;
+}
+
+$max-width: 1200px;
+
+// Font
+$primary-font: 'Open Sans', sans-serif;
+
+// Colors
+$lightgrey-color: rgba(255, 255, 255, 0.7) ;
