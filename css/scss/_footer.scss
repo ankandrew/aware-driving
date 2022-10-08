@@ -1,0 +1,17 @@
+.footer {
+    padding: 2rem 0;
+    background: #404040;
+    color: white;
+
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_buttons {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: end;
+        cursor: pointer;
+    }
+}

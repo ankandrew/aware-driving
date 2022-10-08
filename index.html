@@ -19,8 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- slick theme -->
-<!--    <link href="other/slick/slick.css" rel="stylesheet" type="text/css"/>-->
-<!--    <link href="other/slick/slick-theme.css" rel="stylesheet" type="text/css"/>-->
+    <link href="js/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="js/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -77,48 +77,93 @@
     </div>
 </div>
 </div>
-<section class="padding_tb">
+<section class="about">
     <div class="wrapper">
-        <div class="carousel-section">
-            <h2>Alerts</h2>
-            <div class="slider">
-                <div class="slide">
-                    <div class="slide-img" style="background-image: url('assets/sleep_driver.jpg')">
-                    </div>
-                    <div class="slide-text"><p>When both of your <b>eyes</b> are completely <b>closed</b> for a given amount of time, you'll be alerted!</p></div>
+        <div class="about-container padding_tb">
+            <h2>About App</h2>
+            <p>Nam et sagittis diam. Sed tempor augue sit amet egestas scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+            <div class="about-info">
+                <div class="about-info_text">
+                    <h3>Take a Look Around our App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
                 </div>
-                <div class="slide">
-                    <div class="slide-img" style="background-image: url('assets/distracted_driver.jpg')">
-                    </div>
-                    <div class="slide-text"><p>When you <b>look sideways</b> for a given amount of time you'll be also alerted!</p></div>
-                </div>
-                <div class="slide">
-                    <div class="slide-img" style="background-image: url('assets/noface_driver.jpg')">
-                    </div>
-                    <div class="slide-text"><p>And when your <b>face can't be seen</b> for a given amount of time you'll get also alerted!</p></div>
+                <div class="about-info_video">
+                    <img src="assets/about-video.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="padding_tb">
+<section class="padding_tb background-alert">
     <div class="wrapper">
-        <div class="description">
-                <h2>Description</h2>
-                <p>A more complete description of the mobile app</p>
-                <div>
-                    <p>With a lot of features:</p>
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 1</li>
-                        <li>Feature 1</li>
-                    </ul>
+        <div class="alerts-section">
+            <h2>Alerts</h2>
+            <div class="alerts">
+                <div class="alert">
+                    <img src="assets/sleep_driver.jpg" alt="">
+                    <div class="alert-text"><p>When both of your <b>eyes</b> are completely <b>closed</b> for a given amount of time, you'll be alerted!</p></div>
+                </div>
+                <div class="alert">
+                    <img src="assets/distracted_driver.jpg" alt="">
+                    <div class="alert-text"><p>When you <b>look sideways</b> for a given amount of time you'll be also alerted!</p></div>
+                </div>
+                <div class="alert">
+                    <img src="assets/noface_driver.jpg" alt="">
+                    <div class="alert-text"><p>And when your <b>face can't be seen</b> for a given amount of time you'll get also alerted!</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="padding_tb">-->
+<!--    <div class="wrapper">-->
+<!--        <div class="description">-->
+<!--                <h2>Description</h2>-->
+<!--                <p>A more complete description of the mobile app</p>-->
+<!--                <div>-->
+<!--                    <p>With a lot of features:</p>-->
+<!--                    <ul>-->
+<!--                        <li>Feature 1</li>-->
+<!--                        <li>Feature 1</li>-->
+<!--                        <li>Feature 1</li>-->
+<!--                    </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<section class="carousel">
+    <div class="wrapper">
+        <div class="carousel-intro">
+            <h2>Screenshots</h2>
+            <p>Nam et sagittis diam. Sed tempor augue sit amet egestas scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="slides iphonex">
+            <div class="slide">
+                <img src="assets/sc-2.jpg" alt="sc test">
+            </div>
+            <div class="slide">
+                <img src="assets/sc-2.jpg" alt="sc test">
+            </div>
+            <div class="slide">
+                <img src="assets/sc-2.jpg" alt="sc test">
+            </div>
+            <div class="slide">
+                <img src="assets/sc-2.jpg" alt="sc test">
+            </div>
+            <div class="slide">
+                <img src="assets/sc-2.jpg" alt="sc test">
+            </div>
+            <div class="slide">
+                <img src="assets/sc-2.jpg" alt="sc test">
             </div>
         </div>
     </div>
 </section>
 <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper footer_container">
+        <span>© Andrius inc.</span>
         <div class="footer_buttons">
             <a>Github</a>
             <a>Donate</a>
@@ -128,9 +173,8 @@
 </footer>
 <!-- scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+<script src="js/slick/slick.min.js"></script>
 <script defer="defer" src="backgroundAnimation.js"></script>
 <script defer="defer" src="app.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,40 @@
+.carousel {
+    margin-bottom: 6rem;
+    color:#333;
+
+    .carousel-intro {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        h2,p {
+            margin: 0 auto 2rem auto;
+        }
+
+        p {
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+    .slides{
+        gap: 1rem;
+
+        img{
+            max-width: 192px;
+            width: 100%;
+        }
+        .slick-slide{
+            opacity: .6;
+            display: inline-block;
+            &.slick-current,
+            &.slick-center {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .slick-dots{
+        bottom: -45px;
+    }
+}

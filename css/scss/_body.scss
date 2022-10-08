@@ -4,25 +4,41 @@ header {
     height: calc(100vh);
     background: linear-gradient(293deg, #ED355B 0%, #1976D2 100%);
     z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    display: flex;
     gap: 3rem;
-    //margin-top: 2rem;
     justify-content: center;
     align-items: center;
-    margin-top: 28vh;
+    flex-direction: column;
+    text-align: center ;
+
+    h1,h2,h3 {
+        color: white;
+    }
+
+    @media (min-width: 700px) {
+        flex-direction: row;
+        text-align: left;
+    }
 
     .logo {
-        margin-left: auto;
-        height: 100%;
-        width: auto;
-        aspect-ratio: 1/1;
+        margin:0 auto;
+        flex: 1 1 0px;
+
+        @media (min-width: 700px) {
+            flex-direction: row;
+            width: 100%;
+            margin-left: auto;
+        }
+
 
         img {
-            height: 100%;
+            //height: 100%;
+
         }
     }
 
@@ -40,6 +56,7 @@ header {
     }
 
     .text {
+        flex: 1 1 0px;
         padding: 1rem 0;
         display: flex;
         flex-direction: column;
@@ -49,71 +66,45 @@ header {
     }
 }
 
-.footer {
-    margin-bottom: 2rem;
+.background-alert {
+    background-image: linear-gradient(293deg, #ED355B 0%, #1F65DB 100%);
+    margin-bottom: 3rem;
 
-    &_buttons {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: end;
+    .alerts-section {
+
+        h2,h3,p {
+            color: white;
+        }
+
+        h2 {
+            margin: 1rem auto 3.5rem;
+        }
     }
 }
 
-.carousel-section {
-    color: #333;
-    text-align: center;
-    h2 {
-        font-size: 2.8rem;
-        color: #666;
-        text-transform: uppercase;
-        margin: 1rem auto 3.5rem;
-        width: fit-content;
-        box-shadow: 0px 13px 8px -14px rgba(0,0,0,0.75);
-    }
-}
-
-.slider {
+.alerts {
     display: flex;
     gap: 1.5rem;
 
-
-    .slide {
+    .alert {
+        flex: 1 1 0px;
         max-width: 450px;
         aspect-ratio: 1.49/1;
-        transition: transform .4s;
 
-        &:hover {
-            //transform: scale(1.07);
-        }
-
-        //&:nth-child(2) {
-        //    position: relative;
-        //    z-index: 2;
-        //    margin: -2rem 0 3rem 0;
-        //    transform: scale(1.1);
-        //}
-
-        .slide-text {
-            //color: rgba(255, 255, 255, 0.7);;
-            //background: black;
-            //opacity: 0.7;
+        .alert-text {
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
             padding: 1rem 0.2rem;
 
             p {
                 font-size: 16px;
-                //margin-top: 1.5rem;
                 text-align: center;
             }
         }
 
 
-        .slide-img {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            //border-radius: 8px;
+        img {
+            object-fit: cover;
             border-radius: 8px;
 
             height: 100%;
@@ -149,25 +140,58 @@ header {
 
         &-icon {
             max-width: 66px;
+            margin: 0 auto;
+            margin-bottom: 0.5rem;
         }
     }
 }
 
+.description {
+    color: #666;
+    text-align: center;
 
-//.test {
-//    border-right:solid black ;
-//    width: fit-content;
-//    padding-right: 1rem;
-//    font-size: 2rem;
-//    transition: all .5s;
-//    overflow: hidden;
-//    white-space: nowrap;
-//}
-//
-//.width {
-//    width: 0;
-//    transition: all .5s;
-//}
-//
-//
-//
+    h2 {
+        margin: 0 auto 2rem auto;
+    }
+}
+
+.about {
+    text-align: center;
+    h2 {
+        margin: 0 auto 1.5rem auto;
+    }
+    .about-info {
+        text-align: left;
+        display: flex;
+        margin-top: 3rem;
+        gap: 1.5rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        & > div {
+            flex: 1 1 0px;
+        }
+
+        &_video {
+            img {
+                border-radius: 7px;
+            }
+        }
+    }
+}
+
+.test {
+    border-right:solid white ;
+    width: fit-content;
+    //padding-right: 1rem;
+    font-size: 2rem;
+    transition: all .5s;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1000;
+}
+
+
