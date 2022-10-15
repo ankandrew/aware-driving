@@ -1,17 +1,3 @@
-let test = $(".test");
-test.on("click", function () {
-        test.animate({
-            width: '0'}
-            );
-    test.promise().done(function(){
-        test.animate({
-            width: '190'}
-        );
-
-    })
-
-})
-
 $('.slides').slick({
     slidesToShow: 5,
     dots:true,
@@ -21,18 +7,27 @@ $('.slides').slick({
     focusOnSelect: true,
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 1100,
             settings: {
                 arrows: false,
                 slidesToShow: 3
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 640,
             settings: {
                 arrows: false,
                 slidesToShow: 1
             }
         }
     ]
+});
+
+$('.question').on('click',function (){
+    const parent = $(this).parent()
+    const divItem = parent.parent()
+    const span = divItem.find('.open-button')
+
+    parent.toggleClass('active');
+    span.toggleClass('active');
 });

@@ -6,6 +6,23 @@
     .footer_container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        row-gap: 1.5rem;
+
+        @media (min-width: $mobile-sm) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .copyright {
+        order: 1;
+        margin: 0 auto;
+        flex-basis: 100%;
+        @media (min-width: $mobile-sm) {
+            margin: 0;
+            flex-basis: auto;
+        }
     }
 
     &_buttons {
@@ -13,5 +30,11 @@
         gap: 1.5rem;
         justify-content: end;
         cursor: pointer;
+        order: 0;
+        margin: 0 auto;
+        @media (min-width: $mobile-sm) {
+            order: 2;
+            margin: 0;
+        }
     }
 }

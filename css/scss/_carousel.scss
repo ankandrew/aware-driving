@@ -20,8 +20,13 @@
         gap: 1rem;
 
         img{
-            max-width: 192px;
+            max-width: 260px;
             width: 100%;
+            margin: 0 auto;
+
+            @media (min-width: 640px) {
+                max-width: 192px;
+            }
         }
         .slick-slide{
             opacity: .6;
