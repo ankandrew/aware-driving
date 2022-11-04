@@ -289,8 +289,11 @@ header {
 }
 @media (min-width: 840px) {
   .faqs_container h2 {
-    margin: 0 0 0.5rem;
+    margin: 0 auto 0.5rem;
   }
+}
+.faqs_container p {
+  text-align: center;
 }
 .faqs_list .item {
   color: #333;

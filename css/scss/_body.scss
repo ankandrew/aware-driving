@@ -208,8 +208,12 @@ header {
         h2{
             margin: 0 auto 0.5rem;
             @media (min-width: $tablet-lg) {
-                margin: 0 0 0.5rem;
+                margin: 0 auto 0.5rem;
             }
+        }
+
+        p {
+            text-align: center;
         }
     }
 
