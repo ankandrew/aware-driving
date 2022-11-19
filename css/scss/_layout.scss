@@ -1,5 +1,5 @@
 .wrapper {
-    width: min($max-width, 100% - ($padding-layout * 2));
+    width: min($max-width, calc(100% - ($padding-layout * 2)));
     margin: 0 auto;
 }
 

@@ -1,3 +1,8 @@
+:root {
+    --my-start-width: 10px;
+    --my-end-width: 280px;
+}
+
 @keyframes animatedBackground {
     0% {
         background-position: 0 0
@@ -5,4 +10,30 @@
     100% {
         background-position: 0, -1000px
     }
+}
+
+//@keyframes changewidth {
+//    from {
+//        width: var(--my-start-width);
+//    }
+//
+//    to {
+//        width: var(--my-end-width);
+//    }
+//}
+
+//.type-effect {
+//    text-align: left;
+//    overflow: hidden;
+//    white-space: nowrap;
+//    animation-duration: 1.5s;
+//    border-right: 1px solid white;
+//    animation-name: changewidth;
+//    animation-iteration-count: infinite;
+//    animation-direction: alternate;
+//    width: fit-content;
+//}
+
+.clone{
+    width: fit-content;
 }
