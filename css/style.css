@@ -29,26 +29,42 @@ body {
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.3rem;
   margin: 0;
   font-weight: 700;
+}
+@media (min-width: 700px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
 h2 {
   font-weight: 600;
   margin: 0 0 1.5rem 0;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   color: #666;
   text-transform: uppercase;
   width: fit-content;
 }
+@media (min-width: 700px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+}
 
 h3 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #666;
-  margin: 0 0 1.5rem 0;
+  margin: 0;
+}
+@media (min-width: 700px) {
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 h4 {
@@ -118,20 +134,26 @@ section p {
 header {
   overflow: hidden !important;
   position: relative;
-  height: calc(100vh + 50px);
+  height: 100vh;
   background: linear-gradient(293deg, #ED355B 0%, #1976D2 100%);
   z-index: 2;
   display: flex;
   align-items: center;
 }
+@media (min-width: 700px) {
+  header {
+    height: calc(100vh + 50px);
+  }
+}
 
 .hero {
   display: flex;
-  gap: 3rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 1.5rem;
+  height: 100%;
 }
 .hero h1, .hero h2, .hero h3 {
   color: white;
@@ -140,11 +162,14 @@ header {
   .hero {
     flex-direction: row;
     text-align: left;
+    gap: 3rem;
+    margin-top: 0;
   }
 }
 .hero .logo {
   margin: 0 auto;
   flex: 1 1 0px;
+  width: 90%;
 }
 @media (min-width: 700px) {
   .hero .logo {
