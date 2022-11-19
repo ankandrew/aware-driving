@@ -11,7 +11,7 @@
             referrerpolicy="no-referrer"
             src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <!--  Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <link rel="icon" type="image/x-icon" href="assets/logo.webp">
     <!--  style sheet  -->
     <link rel="stylesheet" href="css/style.css">
     <!--  Open sans Font  -->
@@ -19,8 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- slick theme -->
-<!--    <link href="other/slick/slick.css" rel="stylesheet" type="text/css"/>-->
-<!--    <link href="other/slick/slick-theme.css" rel="stylesheet" type="text/css"/>-->
+    <link href="js/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="js/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -30,107 +30,231 @@
     <div class="wrapper">
         <div class="hero">
             <div class="logo">
-                <img src="assets/Icon-300px.png" alt="Logo">
+                <img src="assets/logo.webp" alt="Logo">
             </div>
             <div class="text">
-            <h1>Aware Driving</h1>
-            <h3>Driving Assistance</h3>
-            <p>Aware Driving (AD) is a mobile app that will assist you while you are driving. Use it with your regular smartphone, there’s no need to buy extra equipment.</p>
-<!--                <span class="test">HOLA ANDI</span>-->
-            <div class="logos">
-                <a href="#" target="_blank" class="playstore"><img src="assets/playstore.png" alt=""></a>
+                <h1>Aware Driving</h1>
+                <h3 class="type-effect">Driving Assistance</h3>
+                <p>Aware Driving (AD) is a mobile app that will assist you while you are driving. Use it with your regular smartphone,
+                    there’s no need to buy extra equipment.</p>
+<!--                <span class="type-effect">Hi, my name is Andrius bitch</span>-->
+                <div class="logos">
+                    <a class="playstore" href="https://play.google.com/store/apps/details?id=com.anka.awaredriving" target="_blank"><img
+                            alt="" src="assets/playstore.png"></a>
+                </div>
             </div>
-        </div>
 
         </div>
     </div>
 </header>
 <div class="wrapper">
-<div class="hero-boxes">
-    <div class="box">
-        <div class="box-icon">
-            <img src="assets/privacy_icon.svg" alt="Privacy Icon">
+    <div class="hero-boxes">
+        <div class="box">
+            <div class="box-icon">
+                <img alt="Privacy Icon" src="assets/privacy_icon.svg">
+            </div>
+            <h4>Privacy</h4>
+            <p>Everything happens on your device</p>
         </div>
-        <h4>Privacy</h4>
-        <p>Images are analyzed on the device and never leave your smartphone</p>
-    </div>
-    <div class="box">
-        <div class="box-icon">
-            <img src="assets/no_wifi_icon.svg" alt="No Wifi Icon">
+        <div class="box">
+            <div class="box-icon">
+                <img alt="No Wifi Icon" src="assets/no_wifi_icon.svg">
+            </div>
+            <h4>Offline</h4>
+            <p>No need to have Wi-Fi/GPS enabled</p>
         </div>
-        <h4>Offline</h4>
-        <p>No need to have WiFi/GPS enabled for it to work</p>
-    </div>
-    <div class="box">
-        <div class="box-icon">
-            <img src="assets/smartphone_icon.svg" alt="Smartphone Icon">
+        <div class="box">
+            <div class="box-icon">
+                <img alt="Smartphone Icon" src="assets/smartphone_icon.svg">
+            </div>
+            <h4>Availability</h4>
+            <p>Available on your regular device</p>
         </div>
-        <h4>Availability</h4>
-        <p>No need to buy any equipment, it’s available on your device</p>
-    </div>
-    <div class="box">
-        <div class="box-icon">
-            <img src="assets/free_icon.svg" alt="Free Icon">
+        <div class="box">
+            <div class="box-icon">
+                <img alt="Free Icon" src="assets/free_icon.svg">
+            </div>
+            <h4>Free</h4>
+            <p>It’s completely free to use</p>
         </div>
-        <h4>Free</h4>
-        <p>It’s completely free to use</p>
     </div>
 </div>
-</div>
-<section class="padding_tb">
+<section class="about">
     <div class="wrapper">
-        <div class="carousel-section">
-            <h2>Alerts</h2>
-            <div class="slider">
-                <div class="slide">
-                    <div class="slide-img" style="background-image: url('assets/sleep_driver.jpg')">
-                    </div>
-                    <div class="slide-text"><p>When both of your <b>eyes</b> are completely <b>closed</b> for a given amount of time, you'll be alerted!</p></div>
+        <div class="about-container padding_tb">
+<!--            <h2>About App</h2>-->
+<!--            <p>With the help of AI and Machine Learning we will alert when the driver is at risk!</p>-->
+            <div class="about-info">
+                <div class="about-info_media">
+                    <img alt="" src="assets/phone_ai.png">
                 </div>
-                <div class="slide">
-                    <div class="slide-img" style="background-image: url('assets/distracted_driver.jpg')">
-                    </div>
-                    <div class="slide-text"><p>When you <b>look sideways</b> for a given amount of time you'll be also alerted!</p></div>
-                </div>
-                <div class="slide">
-                    <div class="slide-img" style="background-image: url('assets/noface_driver.jpg')">
-                    </div>
-                    <div class="slide-text"><p>And when your <b>face can't be seen</b> for a given amount of time you'll get also alerted!</p></div>
+                <div class="about-info_text">
+                    <h2>About App</h2>
+                    <p>With the help of AI and Machine Learning we will alert when the driver is at risk!</p>
+                    <h3>Drive Safer with AI</h3>
+                    <p>Prevent accidents by simply using Aware Driving. You will be alerted when you are asleep, distracted or your face
+                        can't be clearly seen</p>
+                    <p>Aware Driving provides various driving performance scores, which entail being awake, asleep or distracted.</p>
+                    <p>You can adjust the sound of the alarm, the sensitivity of the alerts and which alerts you want to enable/disable,
+                        among other settings.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="padding_tb">
+<section class="padding_tb background-alert">
     <div class="wrapper">
-        <div class="description">
-                <h2>Description</h2>
-                <p>A more complete description of the mobile app</p>
-                <div>
-                    <p>With a lot of features:</p>
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 1</li>
-                        <li>Feature 1</li>
-                    </ul>
+        <div class="alerts-section">
+            <h2>Alerts</h2>
+            <div class="alerts">
+                <div class="alert">
+                    <img src="assets/sleep_driver.jpg" alt="">
+                    <div class="alert-text"><p>When both of your <b>eyes</b> are completely <b>closed</b> for a given amount of time, you'll
+                        be alerted!</p></div>
+                </div>
+                <div class="alert">
+                    <img src="assets/distracted_driver.jpg" alt="">
+                    <div class="alert-text"><p>When you <b>look sideways</b> for a given amount of time you'll be also alerted!</p></div>
+                </div>
+                <div class="alert">
+                    <img src="assets/noface_driver.jpg" alt="">
+                    <div class="alert-text"><p>And when your <b>face can't be seen</b> for a given amount of time you'll get also alerted!
+                    </p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="padding_tb">-->
+<!--    <div class="wrapper">-->
+<!--        <div class="description">-->
+<!--                <h2>Description</h2>-->
+<!--                <p>A more complete description of the mobile app</p>-->
+<!--                <div>-->
+<!--                    <p>With a lot of features:</p>-->
+<!--                    <ul>-->
+<!--                        <li>Feature 1</li>-->
+<!--                        <li>Feature 1</li>-->
+<!--                        <li>Feature 1</li>-->
+<!--                    </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<section class="carousel">
+    <div class="wrapper">
+        <div class="carousel-intro">
+            <h2>Screenshots</h2>
+            <p><b>Simple</b> and <b>Flexible</b> UI designed to adapt to your needs!</p>
+        </div>
+        <div class="slides iphonex">
+            <div class="slide">
+                <img alt="sc test" src="assets/screenshots/statistics_activity.webp">
+            </div>
+            <div class="slide">
+                <img alt="sc test" src="assets/screenshots/settings_activity.webp">
+            </div>
+            <div class="slide">
+                <img alt="sc test" src="assets/screenshots/intro_slide_1.webp">
+            </div>
+            <div class="slide">
+                <img alt="sc test" src="assets/screenshots/welcome_activity.webp">
+            </div>
+            <div class="slide">
+                <img alt="sc test" src="assets/screenshots/about_activity.webp">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="padding_tb faqs_section">
+    <div class="wrapper">
+        <div class="faqs_container">
+            <div class="faqs_title-container">
+                <h2>FAQ</h2>
+                <p>Frequently Asked Questions</p>
+            </div>
+            <div class="faqs_list">
+                <div class="item">
+                    <div class="item-content">
+                        <div class="question">What is the difference between Test and Start mode?</div>
+                        <div class="answer">The app works the same in both, but in Test you see the camera preview for adjustment and in
+                            Start mode you can keep the app running in the background.
+                        </div>
+                    </div>
+                    <div class="open-button">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="question">Where do I need to place my device?</div>
+                        <div class="answer">Alerts emitted are based on the device position. If you look completely down, an alert may be
+                            triggered because from the perspective of the camera you are Asleep (also means you don't have your eyes open on
+                            the road). Try to position it at head level.
+                        </div>
+                    </div>
+                    <div class="open-button">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="question">Alerts stop in the background</div>
+                        <div class="answer">Don't enable "battery optimization" for this app, it's likely that Android will kill the app
+                            while running in the background. Also, if you open an app that uses the camera, it may interfere with Aware
+                            Driving while it's running in the background.
+                        </div>
+                    </div>
+                    <div class="open-button">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="question">What is Intelligent Distracted?</div>
+                        <div class="answer">Aware Driving will predict whether your vehicle is moving and if it's still it won't emit
+                            Distracted alerts (there is no need to pay attention while you are not driving). This is an experimental
+                            feature.
+                        </div>
+                    </div>
+                    <div class="open-button">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="question">Where are Images analyzed?</div>
+                        <div class="answer">
+                            All the image analysis is done offline on your device. No image ever leaves your device, so no
+                            internet connection is ever required.
+                        </div>
+                    </div>
+                    <div class="open-button">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <footer class="footer">
     <div class="wrapper">
-        <div class="footer_buttons">
-            <a>Github</a>
-            <a>Donate</a>
-            <a>Privacy</a>
+        <div class="footer_container">
+        <div class="footer_bottom">
+            <a class="copyright" href="mailto:matias.berger@hotmail.com?subject=Testing out mailto">Contact Us</a>
+            <div class="footer_buttons">
+                <a href="https://www.linkedin.com/in/andres-aranda-b175011a8/">LinkedIn</a>
+<!--            <a>Donate</a>-->
+            <a href="https://sites.google.com/view/aware-driving-privacy-policy?pli=1" target="_blank">Privacy</a>
         </div>
+        </div>
+    </div>
     </div>
 </footer>
 <!-- scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+<script src="js/slick/slick.min.js"></script>
 <script defer="defer" src="backgroundAnimation.js"></script>
 <script defer="defer" src="app.js"></script>
-
 </body>
 </html>

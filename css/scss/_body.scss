@@ -1,28 +1,44 @@
 header {
     overflow: hidden !important;
     position: relative;
-    height: calc(100vh);
+    height: calc(100vh + 50px);
     background: linear-gradient(293deg, #ED355B 0%, #1976D2 100%);
     z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    display: flex;
     gap: 3rem;
-    //margin-top: 2rem;
     justify-content: center;
     align-items: center;
-    margin-top: 28vh;
+    flex-direction: column;
+    text-align: center ;
+
+    h1,h2,h3 {
+        color: white;
+    }
+
+    @media (min-width: $tablet-md) {
+        flex-direction: row;
+        text-align: left;
+    }
 
     .logo {
-        margin-left: auto;
-        height: 100%;
-        width: auto;
-        aspect-ratio: 1/1;
+        margin:0 auto;
+        flex: 1 1 0px;
+
+        @media (min-width: $tablet-md) {
+            flex-direction: row;
+            width: 100%;
+            margin-left: auto;
+        }
+
 
         img {
-            height: 100%;
+            //height: 100%;
+
         }
     }
 
@@ -40,6 +56,7 @@ header {
     }
 
     .text {
+        flex: 1 1 0px;
         padding: 1rem 0;
         display: flex;
         flex-direction: column;
@@ -49,71 +66,49 @@ header {
     }
 }
 
-.footer {
-    margin-bottom: 2rem;
+.background-alert {
+    background-image: linear-gradient(293deg, #ED355B 0%, #1F65DB 100%);
+    margin-bottom: 3rem;
 
-    &_buttons {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: end;
-    }
-}
+    .alerts-section {
 
-.carousel-section {
-    color: #333;
-    text-align: center;
-    h2 {
-        font-size: 2.8rem;
-        color: #666;
-        text-transform: uppercase;
-        margin: 1rem auto 3.5rem;
-        width: fit-content;
-        box-shadow: 0px 13px 8px -14px rgba(0,0,0,0.75);
-    }
-}
-
-.slider {
-    display: flex;
-    gap: 1.5rem;
-
-
-    .slide {
-        max-width: 450px;
-        aspect-ratio: 1.49/1;
-        transition: transform .4s;
-
-        &:hover {
-            //transform: scale(1.07);
+        h2,h3,p {
+            color: white;
         }
 
-        //&:nth-child(2) {
-        //    position: relative;
-        //    z-index: 2;
-        //    margin: -2rem 0 3rem 0;
-        //    transform: scale(1.1);
-        //}
+        h2 {
+            margin: 1rem auto 3.5rem;
+        }
+    }
+}
 
-        .slide-text {
-            //color: rgba(255, 255, 255, 0.7);;
-            //background: black;
-            //opacity: 0.7;
+.alerts {
+    //display: flex;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    .alert {
+        aspect-ratio: 1.49/1;
+
+        @media (min-width: $tablet-md) {
+            max-width: 450px;
+        }
+
+        .alert-text {
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
             padding: 1rem 0.2rem;
 
             p {
                 font-size: 16px;
-                //margin-top: 1.5rem;
                 text-align: center;
             }
         }
 
 
-        .slide-img {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            //border-radius: 8px;
+        img {
+            object-fit: cover;
             border-radius: 8px;
 
             height: 100%;
@@ -125,23 +120,25 @@ header {
 
 .hero-boxes {
     color: #666;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 2rem;
-
-    margin-top: -50px;
+    margin-top: 20px;
     position: relative;
     z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(130px,1fr));
 
+    @media (min-width: $tablet-sm) {
+        margin-top: -50px;
+        grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+    }
 
     .box{
         background-color: white;
         text-align: center;
-        width: 23%;
         padding: 0.5rem 0.7rem;
         border-radius: 7px;
         box-shadow: 0px 0px 47px -12px rgba(0,0,0,0.75);
+        width: 100%;
 
         p {
             font-size: 14px;
@@ -149,25 +146,184 @@ header {
 
         &-icon {
             max-width: 66px;
+            margin: 0 auto;
+            margin-bottom: 0.5rem;
         }
     }
 }
 
+.description {
+    color: #666;
+    text-align: center;
 
-//.test {
-//    border-right:solid black ;
-//    width: fit-content;
-//    padding-right: 1rem;
-//    font-size: 2rem;
-//    transition: all .5s;
-//    overflow: hidden;
-//    white-space: nowrap;
-//}
-//
-//.width {
-//    width: 0;
-//    transition: all .5s;
-//}
-//
-//
-//
+    h2 {
+        margin: 0 auto 2rem auto;
+    }
+}
+
+.about {
+    text-align: center;
+    h2 {
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
+        @media (min-width: $tablet-lg) {
+            text-align: left;
+            margin: 0 auto 1.5rem 0
+        }
+
+    }
+    .about-info {
+        margin-top: 3rem;
+        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media (min-width: $tablet-lg) {
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &_media {
+            img {
+                object-fit: cover;
+                border-radius: 7px;
+                width: auto;
+                margin:0 auto;
+                display: flex;
+
+                @media (min-width: $tablet-lg) {
+                    margin-left: auto;
+                    margin-right: 0;
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+}
+
+.faqs {
+    &_container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        $gap:30px;
+        gap: $gap;
+        @media (min-width: $tablet-lg) {
+            grid-template-columns: calc(45% - $gap) calc(55% - $gap);
+            text-align: left;
+        }
+
+        h2{
+            margin: 0 auto 0.5rem;
+            @media (min-width: $tablet-lg) {
+                margin: 0 auto 0.5rem;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &_list{
+        .item{
+            color: $text-color;
+            position: relative;
+            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            cursor: pointer;
+            margin: 0 auto;
+            text-align: left;
+
+            &:hover {
+                .question{
+                    opacity: 0.7;
+                }
+            }
+
+            .open-button{
+                position: relative;
+                width: 15px;
+                height: 2px;
+
+                &.active{
+                    span::after {
+                        transform: rotate(90deg);
+                    }
+
+                    span::before {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .item-content {
+                &.active {
+                    .question{
+                        font-size: 1.17em;
+                        font-weight: 500;
+                        opacity: 1;
+                    }
+
+                    .answer{
+                        display: block;
+                    }
+                }
+            }
+
+            span{
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background: #666;
+                    transition: transform 100ms;
+                    width: 2px;
+                    height: 12px;
+                    right: 5px;
+                    top: 7px;
+                    margin-top: -1px;
+                    //transform: rotate(180deg);
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background: #666;
+                    transition: transform 100ms;
+                    height: 2px;
+                    width: 12px;
+                    right: 0;
+                    top: 12px;
+                    margin-top: -1px;
+                    transform: rotate(180deg);
+                }
+            }
+            .question {
+                cursor: pointer;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                transition: all .3s;
+                font-weight: 500;
+            }
+
+            .answer{
+                display: none;
+                margin-bottom: 0.8rem;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+

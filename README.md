@@ -2,6 +2,15 @@
 
 https://ankandrew.github.io/aware-driving
 
+### TODO
+
+- [ ] Replace `index.html` icon with HD .webp one
+- [ ] Update privacy policy based on [this](https://sites.google.com/view/aware-driving-privacy-policy).
+- [ ] Typing effect on header
+- [ ] Resize or upload new [assets/phone_ai.png](assets/phone_ai.png)
+- [ ] Add email contact and social network (LinkedIn)
+- [ ] Fix carousel highlight middle screenshot
+
 ### Acknowledgement
 
 * `assets/privacy_icon.svg`: https://www.svgrepo.com/svg/99424/lock
