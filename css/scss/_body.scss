@@ -1,20 +1,26 @@
 header {
     overflow: hidden !important;
     position: relative;
-    height: calc(100vh + 50px);
+    height: 100vh;
     background: linear-gradient(293deg, #ED355B 0%, #1976D2 100%);
     z-index: 2;
     display: flex;
     align-items: center;
+    @media (min-width: $tablet-md) {
+        height: calc(100vh + 50px);
+    }
+
 }
 
 .hero {
     display: flex;
-    gap: 3rem;
+    //gap: 1rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center ;
+    margin-top: 1.5rem;
+    height: 100%;
 
     h1,h2,h3 {
         color: white;
@@ -23,11 +29,14 @@ header {
     @media (min-width: $tablet-md) {
         flex-direction: row;
         text-align: left;
+        gap: 3rem;
+        margin-top: 0;
     }
 
     .logo {
         margin:0 auto;
         flex: 1 1 0px;
+        width: 90%;
 
         @media (min-width: $tablet-md) {
             flex-direction: row;
