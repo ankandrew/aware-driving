@@ -1,10 +1,15 @@
 # [Aware Driving](https://ankandrew.github.io/aware-driving)
 
+<a href="https://ankandrew.github.io/aware-driving/">
+<img src="assets/logo.webp" alt="Project Website" title="Aware Driving Website" width="150"/>
+</a>
+
 ### Intro
 
 **Aware Driving** (AD) is a mobile app that will assist you while you are driving. Use it with your regular smartphone,
 there’s no need to buy extra equipment. We use AI/Machine Learning to alert when you are **asleep**, **distracted** or
 your **face can't be clearly seen**. **_Share_** this app to whoever may need it!
+
 
 <a href="https://play.google.com/store/apps/details?id=com.anka.awaredriving">
 <img src="assets/playstore.png" alt="Google Play Image" title="Google Play Link" width="300"/>
