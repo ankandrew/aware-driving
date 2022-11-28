@@ -1,8 +1,8 @@
-# [Aware Driving](https://ankandrew.github.io/aware-driving)
-
 <a href="https://ankandrew.github.io/aware-driving/">
-<img src="assets/logo.webp" alt="Project Website" title="Aware Driving Website" width="150"/>
+<img src="assets/logo.webp" alt="Project Website" title="Aware Driving Website" width="150" style="border:1px solid gray;"/>
 </a>
+
+# [Aware Driving](https://ankandrew.github.io/aware-driving)
 
 ### Intro
 
