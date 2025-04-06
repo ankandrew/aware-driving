@@ -1,3 +1,9 @@
+# 🚗💡 Looking for a Maintainer & Open Source Collaboration!
+
+Hey there! 👋 This project is currently looking for someone passionate to **maintain and evolve** it, see https://github.com/ankandrew/aware-driving/issues/7.
+
+---
+
 # [Aware Driving](https://ankandrew.github.io/aware-driving)
 
 <a href="https://ankandrew.github.io/aware-driving/">
